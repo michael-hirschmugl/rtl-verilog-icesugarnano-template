@@ -1,31 +1,29 @@
 # PCF list for iCE40LP1K-CM36 on the IceSugarNano (cleaned)
 # Power/GND/CONFIG/SPI/NC are commented out and only for documentation.
 
-set_io --warn-no-port   -iostandard LVCMOS33 GPIO_01    B1   # DPIO,               Bank=3 IceSugarNano PMOD1 Pin 3 PB1 PMOD3 Pin 4 PB1 (possible differential pair)
-set_io --warn-no-port   -iostandard LVCMOS33 GPIO_02    A1   # DPIO,               Bank=3 IceSugarNano PMOD1 Pin 4 PA1 PMOD3 Pin 9 PA1 (possible differential pair)
-set_io --warn-no-port   -iostandard LVCMOS33 GPIO_03    C2   # DPIO,               Bank=3 IceSugarNano PMOD3 Pin 10 PC2
-set_io --warn-no-port   -iostandard LVCMOS33 GPIO_04    E1   # DPIO,               Bank=3 IceSugarNano PMOD3 Pin 3 PE1
-		  						        			            
-set_io --warn-no-port   -iostandard LVCMOS33 GPIO_05    E2   # PIO,                Bank=2 IceSugarNano PMOD1 Pin 1 PE2
-set_io --warn-no-port   -iostandard LVCMOS33 GPIO_06    E3   # PIO,                Bank=2 IceSugarNano PMOD3 Pin 11 PE3
-# set_io --warn-no-port -iostandard LVCMOS33 GPIO_XX    F3   # PIO,                Bank=2 IceSugarNano NOT CONNECTED
-								        		                  
-# set_io --warn-no-port -iostandard LVCMOS33 GPIO_XX    E6   # PIO,                Bank=1 IceSugarNano NOT CONNECTED
-# set_io --warn-no-port -iostandard LVCMOS33 GPIO_XX    D6   # PIO,                Bank=1 IceSugarNano NOT CONNECTED
-set_io --warn-no-port   -iostandard LVCMOS33 GPIO_07    B5   # PIO,                Bank=1 IceSugarNano PMOD3 Pin 2 PB5
-set_io --warn-no-port   -iostandard LVCMOS33 GPIO_08    B6   # PIO,                Bank=1 IceSugarNano PMOD2 Pin 3 PB6 & Yellow LED
-set_io --warn-no-port   -iostandard LVCMOS33 GPIO_09    C6   # PIO,                Bank=1 IceSugarNano PMOD3 Pin 12 PC6
-								        		                  
-# set_io --warn-no-port -iostandard LVCMOS33 GPIO_XX    A2   # PIO,                Bank=0 IceSugarNano NOT CONNECTED
-# set_io --warn-no-port -iostandard LVCMOS33 GPIO_XX    C3   # PIO,                Bank=0 IceSugarNano NOT CONNECTED
-							           
-# set_io --warn-no-port -iostandard LVCMOS33 GPIO_XX    C1   # IOL_6B_GBIN7  GBIN, Bank=3 IceSugarNano NOT CONNECTED
-set_io --warn-no-port   -iostandard LVCMOS33 CLK_IN     D1   # IOL_7A_GBIN6  GBIN, Bank=3 IceSugarNano PMOD1 Pin 2 PD1 & ICE_CLK -> MCO (PA8 Pin20 APM32F103)
-# set_io --warn-no-port -iostandard LVCMOS33 GPIO_XX    F2   # IOB_35_GBIN5  GBIN, Bank=2 IceSugarNano NOT CONNECTED
-set_io --warn-no-port   -iostandard LVCMOS33 GPIO_10    C5   # IOR_60_GBIN3  GBIN, Bank=1 IceSugarNano PMOD2 Pin 4 PC5
-set_io --warn-no-port   -iostandard LVCMOS33 GPIO_11    B4   # IOR_61_GBIN2  GBIN, Bank=1 IceSugarNano PMOD3 Pin 1 PB4
-set_io --warn-no-port   -iostandard LVCMOS33 UART_TX    A3   # IOT_84_GBIN1  GBIN, Bank=0 IceSugarNano PMOD2 Pin 2 PA3 & UART1_TX (PA9 Pin21 APM32F103)
-set_io --warn-no-port   -iostandard LVCMOS33 UART_RX    B3   # IOT_85_GBIN0  GBIN, Bank=0 IceSugarNano PMOD2 Pin 1 PB3 & UART1_RX (PA10 Pin22 APM32F103)
+set_io --warn-no-port                        GPIO_01    B1   # DPIO,               Bank=3 IceSugarNano PMOD1 Pin 3 PB1 PMOD3 Pin 4 PB1 (possible differential pair)
+set_io --warn-no-port                        GPIO_02    A1   # DPIO,               Bank=3 IceSugarNano PMOD1 Pin 4 PA1 PMOD3 Pin 9 PA1 (possible differential pair)
+set_io --warn-no-port                        GPIO_03    C2   # DPIO,               Bank=3 IceSugarNano PMOD3 Pin 10 PC2
+set_io --warn-no-port                        GPIO_04    E1   # DPIO,               Bank=3 IceSugarNano PMOD3 Pin 3 PE1   
+                 		            
+set_io --warn-no-port                        GPIO_05    E2   # PIO,                Bank=2 IceSugarNano PMOD1 Pin 1 PE2
+set_io --warn-no-port                        GPIO_06    E3   # PIO,                Bank=2 IceSugarNano PMOD3 Pin 11 PE3
+# set_io --warn-no-port                      GPIO_XX    F3   # PIO,                Bank=2 IceSugarNano NOT CONNECT                    	                  
+# set_io --warn-no-port                      GPIO_XX    E6   # PIO,                Bank=1 IceSugarNano NOT CONNECTED
+# set_io --warn-no-port                      GPIO_XX    D6   # PIO,                Bank=1 IceSugarNano NOT CONNECTED
+set_io --warn-no-port                        GPIO_07    B5   # PIO,                Bank=1 IceSugarNano PMOD3 Pin 2 PB5
+set_io --warn-no-port                        GPIO_08    B6   # PIO,                Bank=1 IceSugarNano PMOD2 Pin 3 PB6 & Yellow LED
+set_io --warn-no-port                        GPIO_09    C6   # PIO,                Bank=1 IceSugarNano PMOD3 Pin 12 P                    	                  
+# set_io --warn-no-port                      GPIO_XX    A2   # PIO,                Bank=0 IceSugarNano NOT CONNECTED
+# set_io --warn-no-port                      GPIO_XX    C3   # PIO,                Bank=0 IceSugarNano NOT CONNECTED
+			                    
+# set_io --warn-no-port                      GPIO_XX    C1   # IOL_6B_GBIN7  GBIN, Bank=3 IceSugarNano NOT CONNECTED
+set_io --warn-no-port                        CLK_IN     D1   # IOL_7A_GBIN6  GBIN, Bank=3 IceSugarNano PMOD1 Pin 2 PD1 & ICE_CLK -> MCO (PA8 Pin20 APM32F103)
+# set_io --warn-no-port                      GPIO_XX    F2   # IOB_35_GBIN5  GBIN, Bank=2 IceSugarNano NOT CONNECTED
+set_io --warn-no-port                        GPIO_10    C5   # IOR_60_GBIN3  GBIN, Bank=1 IceSugarNano PMOD2 Pin 4 PC5
+set_io --warn-no-port                        GPIO_11    B4   # IOR_61_GBIN2  GBIN, Bank=1 IceSugarNano PMOD3 Pin 1 PB4
+set_io --warn-no-port                        UART_TX    A3   # IOT_84_GBIN1  GBIN, Bank=0 IceSugarNano PMOD2 Pin 2 PA3 & UART1_TX (PA9 Pin21 APM32F103)
+set_io --warn-no-port                        UART_RX    B3   # IOT_85_GBIN0  GBIN, Bank=0 IceSugarNano PMOD2 Pin 1 PB3 & UART1_RX (PA10 Pin22 APM32F103)
 
 # CDONE       CONFIG                  Bank=2       Ball=C4   # Config: NO set_io,         IceSugarNano NOT CONNECTED
 # CRESET_B    CONFIG                  Bank=2       Ball=F4   # Config: NO set_io,         IceSugarNano CRESET_B (PB1 Pin16 APM32F103)
